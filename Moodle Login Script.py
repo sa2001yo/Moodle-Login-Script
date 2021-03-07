@@ -10,7 +10,7 @@ driver = webdriver.Chrome(PATH)
 driver.get("https://moodle.iitd.ac.in/")
 text = driver.find_element_by_id("login").text
 
-#'a' is used to store the type captcha 
+#'a' is used to store the type of captcha 
 a = 0
 if text[51:58] == "enter f":
     a = 1
